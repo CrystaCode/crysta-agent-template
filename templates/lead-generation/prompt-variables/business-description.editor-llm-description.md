@@ -1,0 +1,1 @@
+One or two paragraphs describing the client's business so the AI agent have a good context.

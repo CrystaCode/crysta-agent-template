@@ -1,0 +1,66 @@
+{
+  "code": "lead-generation",
+  "title": "Lead Generation",
+  "description": "Generate high-quality business leads based on specified criteria.",
+  "version": "1.0",
+  "template": "[IMPORT]",
+  "editor-llm-description": "[IMPORT]",
+  "prompt-variables": [
+    {
+      "code": "business-description",
+      "title": "Business description",
+      "display-description": "A description of the business.",
+      "editor-llm-description": "[IMPORT]",
+      "ui-type": "textarea",
+      "ui-group": "basic",
+      "order": 2,
+      "is-visible": true,
+      "default-value": null,
+      "placeholder": "Exp: A real estate business focused on buying and selling residential properties."
+    },
+    {
+      "code": "personality",
+      "title": "Personality",
+      "display-description": "The personality traits of the AI agent.",
+      "editor-llm-description": "The desired personality traits and tone for the agent.",
+      "ui-type": "textarea",
+      "ui-group": "basic",
+      "order": 4,
+      "is-visible": true,
+      "default-value": null,
+      "placeholder": "Exp: Casual and friendly, like chatting with a colleague."
+    },
+    {
+      "code": "instructions",
+      "title": "Instructions",
+      "display-description": "Instructions for the AI agent.",
+      "editor-llm-description": "Clear, detailed instructions on what the agent should do, how it should behave, and any boundaries or limitations",
+      "ui-type": "textarea",
+      "ui-group": "basic",
+      "order": 3,
+      "is-visible": true,
+      "default-value": null,
+      "placeholder": "Exp: Answer customer questions about available apartments."
+    },
+    {
+      "code": "greeting",
+      "title": "Greeting",
+      "display-description": "The initial greeting message for users.",
+      "editor-llm-description": " The initial greeting message the agent should use. Something like: \u0022Hi, I\u0027m John\u0027s assistant, what can I do for you?",
+      "ui-type": "textarea",
+      "ui-group": "basic",
+      "order": 1,
+      "is-visible": true,
+      "default-value": null,
+      "placeholder": "Exp: Hi there! I\u2019m your real estate AI \u2014 ready to help you find the perfect property."
+    }
+  ],
+  "ui-groups": [
+    {
+      "code": "basic",
+      "title": "Basic Information",
+      "order": 1
+    }
+  ],
+  "supported-languages": []
+}

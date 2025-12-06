@@ -1,0 +1,78 @@
+{
+  "code": "real-estate-agent-assist",
+  "title": "Real Estate Agent Assist",
+  "description": "Assist real estate agents in managing client inquiries and generating leads.",
+  "version": "1.0",
+  "template": "[IMPORT]",
+  "editor-llm-description": "[IMPORT]",
+  "prompt-variables": [
+    {
+      "code": "real-estate-agent-name",
+      "title": "Real estate agent name",
+      "display-description": "The name of the real estate agent.",
+      "editor-llm-description": "The name of the real estate agent.",
+      "ui-type": "textarea",
+      "ui-group": "basic",
+      "order": 2,
+      "is-visible": true,
+      "default-value": null,
+      "placeholder": "e.g. John Doe"
+    },
+    {
+      "code": "agency-name",
+      "title": "Agency name",
+      "display-description": "The name of the real estate agency.",
+      "editor-llm-description": "The name of the real estate agency or brokerage the agent represents.",
+      "ui-type": "textarea",
+      "ui-group": "basic",
+      "order": 2,
+      "is-visible": true,
+      "default-value": null,
+      "placeholder": "Exp: A real estate business focused on buying and selling residential properties."
+    },
+    {
+      "code": "activity-area",
+      "title": "Activity area",
+      "display-description": "Which geographical area the agent operates in.",
+      "editor-llm-description": "The specific geographical area or neighborhood where the real estate agent primarily operates. This helps the agent provide relevant information to clients.",
+      "ui-type": "textarea",
+      "ui-group": "basic",
+      "order": 3,
+      "is-visible": true,
+      "default-value": null,
+      "placeholder": "e.g. Toronto, Downtown, ..."
+    },
+    {
+      "code": "available-properties",
+      "title": "Available properties",
+      "display-description": "Details about the properties and listings available for sale or rent.",
+      "editor-llm-description": "Clear, detailed information about the properties the agent can offer, including features, locations, and prices. This will help the agent provide accurate information to clients.",
+      "ui-type": "textarea",
+      "ui-group": "basic",
+      "order": 3,
+      "is-visible": true,
+      "default-value": null,
+      "placeholder": "e.g. 2-bedroom apartments in downtown Toronto starting at $800,000."
+    },
+    {
+      "code": "greeting",
+      "title": "Greeting",
+      "display-description": "The initial greeting message for users.",
+      "editor-llm-description": " The initial greeting message the agent should use. Something like: \u0022Hi, I\u0027m John\u0027s assistant, what can I do for you?",
+      "ui-type": "textarea",
+      "ui-group": "basic",
+      "order": 1,
+      "is-visible": true,
+      "default-value": "Hi there! I'm ${AgentName}, here to to help you find the perfect home.",
+      "placeholder": "e.g. Hi there! I'm ${AgentName}, here to to help you find the perfect home"
+    }
+  ],
+  "ui-groups": [
+    {
+      "code": "basic",
+      "title": "Basic Information",
+      "order": 1
+    }
+  ],
+  "supported-languages": []
+}
