@@ -1,0 +1,30 @@
+{
+  "code": "blank",
+  "title": "Blank Template",
+  "description": "Create a AI agent from scratch by providing your own prompt.",
+  "version": "1.0",
+  "template": "${prompt.instructions}",
+  "editor-llm-description": "Ask as much as you can to get better and more detailed prompt.",
+  "prompt-variables": [
+    {
+      "code": "instructions",
+      "title": "Instructions",
+      "display-description": "The main prompt for the AI agent.",
+      "editor-llm-description": "The main prompt that defines the behavior and responses of the AI agent. Everything will be based on this prompt. Provide as much detail as possible to ensure the AI agent performs effectively.",
+      "ui-type": "textarea",
+      "ui-group": "basic",
+      "order": 2,
+      "is-visible": true,
+      "default-value": null,
+      "placeholder": "e.g. Describe the behavior and responses of the AI agent."
+    }
+  ],
+  "ui-groups": [
+    {
+      "code": "basic",
+      "title": "Basic Information",
+      "order": 1
+    }
+  ],
+  "supported-languages": []
+}
